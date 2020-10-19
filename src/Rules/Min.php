@@ -15,7 +15,7 @@ class Min implements IRule
         $_data = trim($data[$key]);
 
         if (is_int($_data)) {
-            // TODO check int 
+            // TODO check int
             if ($_data < $value){
                 throw new ValidationException($key . " should be greater than " . $value);
             }
