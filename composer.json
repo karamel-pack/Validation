@@ -1,0 +1,19 @@
+{
+    "name": "karamel/validation",
+    "description": "validate request",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "amir kalantar",
+            "email": "amir.kalantar74@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Karamel\\Validation\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
