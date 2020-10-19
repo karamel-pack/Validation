@@ -1,9 +1,14 @@
 <?php
+
 namespace Karamel\Validation\Rules;
-class CheckRule {
-    public static function check($key,$data,$name,$value)
+class CheckRule
+{
+    public static function check($name, $data, $key, $value)
     {
-        $name = ucfirst($name);
+
+        $_name = trim(ucfirst($name));
+        $_name = "Karamel\\Validation\\Rules\\".$_name;
+         (new $_name())->validate($data, $key, $value);
 
     }
 }
